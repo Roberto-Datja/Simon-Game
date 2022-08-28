@@ -1,0 +1,96 @@
+/*
+gamePattern is an array that saves all colors by randomNumber
+In our case in the end:  ['yellow', 'blue', 'blue', 'red', 'green', 'yellow']
+
+userClickedPattern: is an array that saves all colors by mouse_click
+In our case in the end :  ['yellow', 'blue', 'blue', 'red', 'green', 'green']
+
+When we success the user Clicked Pattern makes empty. It should fills up in the same way as gamePattern.
+So, we should have the good the memory!
+In each position/level(independent length) they should be the same, as we see in the last they are different.
+
+//----------------------------Example of execution of code in Console-------------------------------------------
+['yellow']
+game.js:52 ['yellow']
+game.js:58 success
+game.js:51 (2) ['yellow', 'blue']
+game.js:52 ['yellow']
+game.js:58 success
+game.js:51 (2) ['yellow', 'blue']
+game.js:52 (2) ['yellow', 'blue']
+game.js:58 success
+game.js:51 (3) ['yellow', 'blue', 'blue']
+game.js:52 ['yellow']
+game.js:58 success
+game.js:51 (3) ['yellow', 'blue', 'blue']
+game.js:52 (2) ['yellow', 'blue']
+game.js:58 success
+game.js:51 (3) ['yellow', 'blue', 'blue']
+game.js:52 (3) ['yellow', 'blue', 'blue']
+game.js:58 success
+game.js:51 (4) ['yellow', 'blue', 'blue', 'red']
+game.js:52 ['yellow']
+game.js:58 success
+game.js:51 (4) ['yellow', 'blue', 'blue', 'red']
+game.js:52 (2) ['yellow', 'blue']
+game.js:58 success
+game.js:51 (4) ['yellow', 'blue', 'blue', 'red']
+game.js:52 (3) ['yellow', 'blue', 'blue']
+game.js:58 success
+game.js:51 (4) ['yellow', 'blue', 'blue', 'red']
+game.js:52 (4) ['yellow', 'blue', 'blue', 'red']
+game.js:58 success
+game.js:51 (5) ['yellow', 'blue', 'blue', 'red', 'green']
+game.js:52 ['yellow']
+game.js:58 success
+game.js:51 (5) ['yellow', 'blue', 'blue', 'red', 'green']
+game.js:52 (2) ['yellow', 'blue']
+game.js:58 success
+game.js:51 (5) ['yellow', 'blue', 'blue', 'red', 'green']
+game.js:52 (3) ['yellow', 'blue', 'blue']
+game.js:58 success
+game.js:51 (5) ['yellow', 'blue', 'blue', 'red', 'green']
+game.js:52 (4) ['yellow', 'blue', 'blue', 'red']
+game.js:58 success
+game.js:51 (5) ['yellow', 'blue', 'blue', 'red', 'green']
+game.js:52 (5) ['yellow', 'blue', 'blue', 'red', 'green']
+game.js:58 success
+game.js:51 (6) ['yellow', 'blue', 'blue', 'red', 'green', 'yellow']
+game.js:52 ['yellow']
+game.js:58 success
+game.js:51 (6) ['yellow', 'blue', 'blue', 'red', 'green', 'yellow']
+game.js:52 (2) ['yellow', 'blue']
+game.js:58 success
+game.js:51 (6) ['yellow', 'blue', 'blue', 'red', 'green', 'yellow']
+game.js:52 (3) ['yellow', 'blue', 'blue']
+game.js:58 success
+game.js:51 (6) ['yellow', 'blue', 'blue', 'red', 'green', 'yellow']
+game.js:52 (4) ['yellow', 'blue', 'blue', 'red']
+game.js:58 success
+game.js:51 (6) ['yellow', 'blue', 'blue', 'red', 'green', 'yellow']
+game.js:52 (5) ['yellow', 'blue', 'blue', 'red', 'green']
+game.js:58 success
+game.js:51 (6) ['yellow', 'blue', 'blue', 'red', 'green', 'yellow']
+game.js:52 (6) ['yellow', 'blue', 'blue', 'red', 'green', 'green']
+game.js:72 wrong
+*/
+
+
+//----------------------------Example2 of execution of code in Console-------------------------------------------
+/*
+['red']
+game.js:52 ['red']
+game.js:58 success
+game.js:51 (2) ['red', 'green']
+game.js:52 ['red']
+game.js:58 success
+game.js:51 (2) ['red', 'green']
+game.js:52 (2) ['red', 'green']
+game.js:58 success
+game.js:51 (3) ['red', 'green', 'yellow']
+game.js:52 ['red']
+game.js:58 success
+game.js:51 (3) ['red', 'green', 'yellow']
+game.js:52 (2) ['red', 'yellow']
+game.js:72 wrong
+*/
